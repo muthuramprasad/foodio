@@ -165,6 +165,11 @@ figure {
     overflow: hidden;
 }
 /* 1. header-top */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
 .content-header {
     display: flex;
     align-items: center;
@@ -1896,10 +1901,11 @@ footer {
 }
 /* 39. header.three */
 header.three {
-    position: absolute;
+    position: sticky;
+    top: 0;
     width: 100%;
     padding-top: 40px;
-    z-index: 11;
+    z-index: 999;
 }
 header.three .contact{
     display: flex;
@@ -4023,8 +4029,9 @@ header.two .navbar-links li a {
 }
 
 header.two {
-    z-index: 1;
-    position: absolute;
+    z-index: 999;
+    position: sticky;
+    top: 0;
     width: 100%;
     padding: 15px;
     padding-top: 10px;
